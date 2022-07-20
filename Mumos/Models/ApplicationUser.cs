@@ -13,10 +13,13 @@ namespace Mumos.Models
             this.FeedBacks = new HashSet<FeedBack>();
         }
 
+        public Company Company { get; set; }
+
+        public int? CompanyId { get; set; }
+
         public virtual ICollection<JobUser> JobUsers { get; set; }
 
         public virtual ICollection<FeedBack> FeedBacks { get; set; }
-
 
     }
 }
